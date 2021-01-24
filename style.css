@@ -20,7 +20,28 @@ div {
     transition: 1s;
 }
 
-span:hover~div:nth-of-type(1) {
+div.two {
+    z-index: -1;
+    transition: 1s 0.3s;
+}
+
+div.three {
+    z-index: -2;
+    transition: 1s 0.6s;
+}
+
+div.four {
+    z-index: 1;
+    transition: 1s 0.9s;
+}
+
+div.five,
+div.six {
+    z-index: 1;
+    transition: 1s 1.2s;
+}
+
+.buildone {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -29,12 +50,7 @@ span:hover~div:nth-of-type(1) {
     background-color: burlywood;
 }
 
-div:nth-of-type(2) {
-    z-index: -1;
-    transition: 1s 0.3s;
-}
-
-span:hover~div:nth-of-type(2) {
+.buildtwo {
     top: calc(50% - 15%);
     left: 50%;
     transform: translate(-50%, -50%) rotate(135deg);
@@ -43,12 +59,7 @@ span:hover~div:nth-of-type(2) {
     background-color: black;
 }
 
-div:nth-of-type(3) {
-    z-index: -2;
-    transition: 1s 0.6s;
-}
-
-span:hover~div:nth-of-type(3) {
+.buildthree {
     top: 17%;
     left: 57%;
     height: 15vh;
@@ -56,12 +67,7 @@ span:hover~div:nth-of-type(3) {
     background-color: gray;
 }
 
-div:nth-of-type(4) {
-    z-index: 1;
-    transition: 1s 0.9s;
-}
-
-span:hover~div:nth-of-type(4) {
+.buildfour {
     top: 50%;
     left: calc(50% - 5vh);
     height: 15vh;
@@ -69,13 +75,7 @@ span:hover~div:nth-of-type(4) {
     background-color: gray
 }
 
-div:nth-of-type(5),
-div:nth-of-type(6) {
-    z-index: 1;
-    transition: 1s 1.2s;
-}
-
-span:hover~div:nth-of-type(5) {
+.buildfive {
     top: 44%;
     left: 43%;
     transform: translate(-50%, -50%);
@@ -84,7 +84,7 @@ span:hover~div:nth-of-type(5) {
     background-color: yellow;
 }
 
-span:hover~div:nth-of-type(6) {
+.buildsix {
     top: 44%;
     left: calc(100% - 43%);
     transform: translate(-50%, -50%);
