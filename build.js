@@ -1,18 +1,23 @@
+const elements = [...document.querySelectorAll('div')];
 const btn = document.querySelector('span');
-const elementOne = document.querySelector('.one');
-const elementTwo = document.querySelector('.two');
-const elementThree = document.querySelector('.three');
-const elementFour = document.querySelector('.four');
-const elementFive = document.querySelector('.five');
-const elementSix = document.querySelector('.six');
 
-function build() {
-    elementOne.classList.toggle('buildone');
-    elementTwo.classList.toggle('buildtwo');
-    elementThree.classList.toggle('buildthree');
-    elementFour.classList.toggle('buildfour');
-    elementFive.classList.toggle('buildfive');
-    elementSix.classList.toggle('buildsix');
-}
-
-btn.addEventListener('click', build);
+btn.addEventListener('click', () => {
+    if (elements[0].haveClass = ('one')) {
+        elements[0].classList.toggle('buildone')
+    }
+    if (elements[1].haveClass = ('two')) {
+        elements[1].classList.toggle('buildtwo')
+    }
+    if (elements[2].haveClass = ('three')) {
+        elements[2].classList.toggle('buildthree')
+    }
+    if (elements[3].haveClass = ('four')) {
+        elements[3].classList.toggle('buildfour')
+    }
+    if (elements[4].haveClass = ('five')) {
+        elements[4].classList.toggle('buildfive')
+    }
+    if (elements[5].haveClass = ('six')) {
+        elements[5].classList.toggle('buildsix')
+    }
+})
